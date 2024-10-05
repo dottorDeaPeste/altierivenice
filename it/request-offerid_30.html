@@ -12,7 +12,7 @@
 <meta content="7 days" name="revisit-after">
 <meta content="all" name="robots"/>
 <style media="all" type="text/css">
-@import url("../css/styles.css");
+@import url("/altierivenice/css/styles.css");
 </style>
 <script language="JavaScript">
 <!-- Begin
@@ -120,50 +120,50 @@ Filtro = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-]{2,})+\.)+([a-zA-Z0-9]{2,})+$/;
 FiltroAnagrafica = /[a-zA-Z0-9\'\.]+/;
 
 (FiltroAnagrafica.test(f.cognome.value)) == false
-? showImage("cognome_error", "../img/error.gif", true)   // no semi-colon after this line!
-: showImage("cognome_error", "../img/empty.gif", false); // true = errors, false = no errors
+? showImage("cognome_error", "/altierivenice/img/error.gif", true)   // no semi-colon after this line!
+: showImage("cognome_error", "/altierivenice/img/empty.gif", false); // true = errors, false = no errors
 
 (FiltroAnagrafica.test(f.nome.value)) == false
-? showImage("nome_error", "../img/error.gif", true)   // no semi-colon after this line!
-: showImage("nome_error", "../img/empty.gif", false); // true = errors, false = no errors
+? showImage("nome_error", "/altierivenice/img/error.gif", true)   // no semi-colon after this line!
+: showImage("nome_error", "/altierivenice/img/empty.gif", false); // true = errors, false = no errors
 
 (FiltroAnagrafica.test(f.nominativo.value)) == false
-? showImage("nominativo_error", "../img/error.gif", true)   // no semi-colon after this line!
-: showImage("nominativo_error", "../img/empty.gif", false); // true = errors, false = no errors
+? showImage("nominativo_error", "/altierivenice/img/error.gif", true)   // no semi-colon after this line!
+: showImage("nominativo_error", "/altierivenice/img/empty.gif", false); // true = errors, false = no errors
 
 (Filtro.test(f.email.value)) == false
-? showImage("email_error", "../img/error.gif", true)   // no semi-colon after this line!
-: showImage("email_error", "../img/empty.gif", false); // true = errors, false = no errors
+? showImage("email_error", "/altierivenice/img/error.gif", true)   // no semi-colon after this line!
+: showImage("email_error", "/altierivenice/img/empty.gif", false); // true = errors, false = no errors
 
 if(isObject(f.confermaemail) && (Filtro.test(f.email.value)==true) ){
 	(f.confermaemail.value != f.email.value)
-	? showImage("confermaemail_error", "../img/error.gif",true)   // no semi-colon after this line!
-	: showImage("confermaemail_error", "../img/empty.gif",false); // true = errors, false = no errors
+	? showImage("confermaemail_error", "/altierivenice/img/error.gif",true)   // no semi-colon after this line!
+	: showImage("confermaemail_error", "/altierivenice/img/empty.gif",false); // true = errors, false = no errors
 }
 
 (!ArriveDateOk)
-? showImage("arrivo_error", "../img/error.gif", true)
-: showImage("arrivo_error", "../img/empty.gif", false);
+? showImage("arrivo_error", "/altierivenice/img/error.gif", true)
+: showImage("arrivo_error", "/altierivenice/img/empty.gif", false);
 
 (!BackDateOk)
-? showImage("partenza_error", "../img/error.gif", true)
-: showImage("partenza_error", "../img/empty.gif", false);
+? showImage("partenza_error", "/altierivenice/img/error.gif", true)
+: showImage("partenza_error", "/altierivenice/img/empty.gif", false);
 
 (f.quantita_alloggio_richiesta_1.value.length < 1)
-? showImage("quantita_alloggio_richiesta_1_error", "../img/error.gif", true)   // no semi-colon after this line!
-: showImage("quantita_alloggio_richiesta_1_error", "../img/empty.gif", false); // true = errors, false = no errors
+? showImage("quantita_alloggio_richiesta_1_error", "/altierivenice/img/error.gif", true)   // no semi-colon after this line!
+: showImage("quantita_alloggio_richiesta_1_error", "/altierivenice/img/empty.gif", false); // true = errors, false = no errors
 
 (f.tipo_alloggio_richiesta_1.value.length < 1)
-? showImage("tipo_alloggio_richiesta_1_error", "../img/error.gif", true)   // no semi-colon after this line!
-: showImage("tipo_alloggio_richiesta_1_error", "../img/empty.gif", false); // true = errors, false = no errors
+? showImage("tipo_alloggio_richiesta_1_error", "/altierivenice/img/error.gif", true)   // no semi-colon after this line!
+: showImage("tipo_alloggio_richiesta_1_error", "/altierivenice/img/empty.gif", false); // true = errors, false = no errors
 
 (f.totale_adulti.value.length < 1)
-? showImage("totale_adulti_error", "../img/error.gif", true)   // no semi-colon after this line!
-: showImage("totale_adulti_error", "../img/empty.gif", false); // true = errors, false = no errors
+? showImage("totale_adulti_error", "/altierivenice/img/error.gif", true)   // no semi-colon after this line!
+: showImage("totale_adulti_error", "/altierivenice/img/empty.gif", false); // true = errors, false = no errors
 
 (!isChecked(f.consenso))
-? showImage("consenso_error", "../img/error.gif", true)   // no semi-colon after this line!
-: showImage("consenso_error", "../img/empty.gif", false); // true = errors, false = no errors
+? showImage("consenso_error", "/altierivenice/img/error.gif", true)   // no semi-colon after this line!
+: showImage("consenso_error", "/altierivenice/img/empty.gif", false); // true = errors, false = no errors
 
 if(haveerrors){
 	str="Attenzione!\nNon tutti i campi obbligatori, messi in evidenza, sono stati compilati.";
@@ -218,10 +218,10 @@ pageTracker._trackPageview();
 </div>
 
 <div id="contenitoreinterno">
-<div id="top_interno"><img alt="" class="floatleft" height="127" src="../img/reservations_dettaglio.jpg" width="310"/>
+<div id="top_interno"><img alt="" class="floatleft" height="127" src="/altierivenice/img/reservations_dettaglio.jpg" width="310"/>
 <h1>Prenotazioni</h1>
 </div>
-<div id="foto"><img alt="" height="386" src="../img/reservations_foto.jpg" width="750"/></div>
+<div id="foto"><img alt="" height="386" src="/altierivenice/img/reservations_foto.jpg" width="750"/></div>
 <div id="menuinterno">
 <div class="menu">
 <p><a href="../it/index.html">HOME</a> | 
@@ -287,7 +287,7 @@ pageTracker._trackPageview();
 </td>
 </tr>
 <tr>
-<td class="allert" nowrap="" width="15"><img name="cognome_error" src="../img/empty.gif"/></td>
+<td class="allert" nowrap="" width="15"><img name="cognome_error" src="/altierivenice/img/empty.gif"/></td>
 <td nowrap="" valign="top">
 <div align="left">
 <input class="campo_testo" maxlength="40" name="cognome" size="20" type="text" value=""/>
@@ -301,7 +301,7 @@ pageTracker._trackPageview();
 </td>
 </tr>
 <tr>
-<td class="allert" nowrap="" width="15"><img border="0" name="nome_error" src="../img/empty.gif"/></td>
+<td class="allert" nowrap="" width="15"><img border="0" name="nome_error" src="/altierivenice/img/empty.gif"/></td>
 <td nowrap="" valign="top">
 <div align="left">
 <input class="campo_testo" maxlength="40" name="nome" size="20" type="text" value=""/>
@@ -315,7 +315,7 @@ pageTracker._trackPageview();
 </td>
 </tr>
 <tr>
-<td class="allert" nowrap="" width="15"><img border="0" name="email_error" src="../img/empty.gif"/></td>
+<td class="allert" nowrap="" width="15"><img border="0" name="email_error" src="/altierivenice/img/empty.gif"/></td>
 <td nowrap="" valign="top">
 <div align="left">
 <input class="campo_testo" maxlength="80" name="email" size="20" type="text" value=""/>
@@ -342,7 +342,7 @@ pageTracker._trackPageview();
 </tr>
 </table>
 </td>
-<td valign="top" width="32"><img alt="" border="0" src="../img/spessore.gif"/></td>
+<td valign="top" width="32"><img alt="" border="0" src="/altierivenice/img/spessore.gif"/></td>
 <td class="formtab" valign="top">
 <div align="left">
 <table border="0" cellpadding="2" cellspacing="0" width="100%">
@@ -356,7 +356,7 @@ pageTracker._trackPageview();
 </td>
 </tr>
 <tr>
-<td class="allert" width="15"><img border="0" name="arrivo_error" src="../img/empty.gif"/></td>
+<td class="allert" width="15"><img border="0" name="arrivo_error" src="/altierivenice/img/empty.gif"/></td>
 <td colspan="4" valign="top">
 <select class="campo_select" name="giorno_arrivo" size="1">
 <option selected="" value="">Giorno</option>
@@ -422,7 +422,7 @@ pageTracker._trackPageview();
 </td>
 </tr>
 <tr>
-<td class="allert" width="15"><img border="0" name="partenza_error" src="../img/empty.gif"/></td>
+<td class="allert" width="15"><img border="0" name="partenza_error" src="/altierivenice/img/empty.gif"/></td>
 <td colspan="4" valign="top">
 <select class="campo_select" name="giorno_partenza" size="1">
 <option selected="" value="">Giorno</option>
@@ -492,7 +492,7 @@ pageTracker._trackPageview();
 </td>
 </tr>
 <tr>
-<td class="allert" width="15"><img border="0" name="totale_adulti_error" src="../img/empty.gif"/></td>
+<td class="allert" width="15"><img border="0" name="totale_adulti_error" src="/altierivenice/img/empty.gif"/></td>
 <td valign="top">
 <select class="campo_select" name="totale_adulti" size="1" value="">
 <option selected="" value=""></option>
@@ -535,7 +535,7 @@ pageTracker._trackPageview();
 </td>
 </tr>
 <tr>
-<td class="allert" width="15"><img border="0" name="tipo_alloggio_richiesta_1_error" src="../img/empty.gif"/></td>
+<td class="allert" width="15"><img border="0" name="tipo_alloggio_richiesta_1_error" src="/altierivenice/img/empty.gif"/></td>
 <td valign="top">
 <select class="campo_select" name="tipo_alloggio_richiesta_1" size="1" value="">
 <option selected="" value=""></option>
@@ -546,7 +546,7 @@ pageTracker._trackPageview();
 <option value="Tripla Child">Tripla Child</option>
 </select>
 <span class="formfontrequired">*</span></td>
-<td class="allert" width="15"><img border="0" name="quantita_alloggio_richiesta_1_error" src="../img/empty.gif"/></td>
+<td class="allert" width="15"><img border="0" name="quantita_alloggio_richiesta_1_error" src="/altierivenice/img/empty.gif"/></td>
 <td valign="top">
 <select class="campo_select" name="quantita_alloggio_richiesta_1" size="1" value="">
 <option selected="" value=""></option>
@@ -631,7 +631,7 @@ pageTracker._trackPageview();
 </td>
 </tr>
 <tr>
-<td class="allert" width="15"><img border="0" name="nominativo_error" src="../img/empty.gif"/></td>
+<td class="allert" width="15"><img border="0" name="nominativo_error" src="/altierivenice/img/empty.gif"/></td>
 <td colspan="4">
 <div align="left">
 <input class="campo_testo" maxlength="35" name="nominativo" size="20" type="text" value=""/>
@@ -656,7 +656,7 @@ pageTracker._trackPageview();
 <div align="center">
 <table border="0" cellpadding="2" cellspacing="0" width="100%">
 <tr>
-<td class="allert" width="15"><img border="0" name="consenso_error" src="../img/empty.gif"/></td>
+<td class="allert" width="15"><img border="0" name="consenso_error" src="/altierivenice/img/empty.gif"/></td>
 <td>
 <p class="consenso_font">
 <input checked="" name="consenso" type="checkbox" value="Si"/>
