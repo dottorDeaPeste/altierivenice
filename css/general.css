@@ -1,0 +1,845 @@
+body {
+	color: #626262;
+	font-family: "Trebuchet MS", Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	background: #B9BE8E;
+	text-align: center;
+	margin: 0px auto 0;
+	padding: 0;
+}
+p, h1, h2, h3, h4, dd, dt, ul, li {
+	color: #626262;
+	font-family: "Trebuchet MS", Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	text-align: left;
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: #ACB16F;
+	text-decoration: none;
+}
+a:hover {
+	color: #626262;
+	text-decoration: none;
+}
+div#contenitore {
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+	width: 830px;
+	vertical-align: top;
+	background: #B9BE8E url(../img/b_home.gif) no-repeat -1px 0;
+}
+.tophome {
+	vertical-align: top;
+	margin: 0 36px;
+	padding: 0;
+	width: 758px;
+	height: 70px;
+}
+div.flash {
+	vertical-align: top;
+	margin: 0 40px;
+	padding: 0;
+	width: 750px;
+	height: 330px;
+}
+#tabellahome {
+	vertical-align: top;
+	padding: 0;
+	margin: 0 36px;
+	border-spacing: 0;
+	width: 758px;
+	background: url(../img/bg_footer.jpg) no-repeat 0 bottom;
+}
+#col_sx {
+	vertical-align: top;
+	width: 266px;
+	border-spacing: 0;
+	text-align: center;
+}
+#col_sx img.logo {
+	vertical-align: top;
+	padding: 0 0 20px;
+	margin: 30px 0 20px 25px;
+	border-bottom: 1px solid #FECF97;
+}
+#col_sx p.language {
+	font-size: 84%;
+	line-height: 120%;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+#col_sx p.nuova_gestione {
+	background: #F2E6B6;
+	font-size: 84%;
+	margin: 22px 0 20px 40px;
+	padding: 10px 0 10px 40px;
+	font-weight: bold;
+}
+#col_sx img.logoducale {
+	padding: 0 0 10px;
+	margin: 0;
+	text-align: center;
+	border-bottom: 1px solid #FECF97;
+}
+#col_sx div.prezzogarantito {
+	vertical-align: top;
+	margin: 0 0 0 45px;
+}
+div.zpc_viewtabella {
+	width: 100%;
+	padding: 0;
+	margin: 20px 0 0;
+}
+div.zpc_viewtabella .zpc_img {
+	padding: 0 5px 0 0;
+	float: left;
+}
+div.zpc_viewtabella .zpc_img img {
+border:0;
+}
+div.zpc_viewtabella .zpc_titoli {
+	font-size: 65%;
+	font-style: normal;
+	line-height: 130%;
+	font-weight: bold;
+	padding: 0;
+}
+div.zpc_viewtabella .zpc_link a {
+	color: #ACB16F;
+	text-decoration: none;
+}
+div.zpc_viewtabella .zpc_link a:hover {
+	color: #626262;
+	text-decoration: none;
+}
+.zpc_up {
+	color: #fff;
+	font-size: 100%;
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background: #393430;
+}
+.zpc_img_up_it {
+	height: 137px;
+	text-align: left;
+	background: #9A948C url(../img/altierivenice_bp_it.jpg) no-repeat;
+}
+.zpc_img_up_en {
+	height: 137px;
+	text-align: left;
+	background: #9A948C url(../img/altierivenice_bp_en.jpg) no-repeat;
+}
+.zpc_corpo {
+	font-size: 84%;
+	color: #000;
+	text-align: left;
+	background: #fff;
+	padding: 15px 10px;
+}
+.zpc_down {
+	color: #fff;
+	font-size: 84%;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background: #393430;
+}
+a.zpc_chiudi {
+	color: #fff;
+	text-decoration: none;
+}
+a.zpc_chiudi:Hover {
+	color: #fff;
+	text-decoration: underline;
+}
+.trasporti {
+	background: #F2E6B6;
+	font-size: 84%;
+	line-height: 130%;
+	text-align: center;
+	font-weight: bold;
+	margin: 10px 0 40px 40px;
+	padding: 10px;
+	clear: both;
+}
+.trasporti_rooms {
+	background: #F2E6B6;
+	font-size: 84%;
+	line-height: 130%;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	padding: 10px;
+	clear: both;
+}
+#col_dx {
+	vertical-align: top;
+	width: 492px;
+	border-spacing: 0;
+	text-align: left;
+	padding: 20px;
+}
+#col_dx div.menu {
+	vertical-align: top;
+	margin: 30px 0 0;
+	border-bottom: 1px solid #FECF97;
+	padding: 0 0 10px;
+	width: 100%;
+}
+#col_dx div.menu p {
+	color: #FECF97;
+	text-align: center;
+	padding: 0;
+	font: bold 12px Georgia, "Trebuchet MS", Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+#col_dx div.menu p a {
+	color: #828848;
+	text-decoration: none;
+}
+#col_dx div.menu p a:hover {
+	color: #FECF97;
+	text-decoration: none;
+}
+#col_dx p.testohome {
+	font-size: 84%;
+	line-height: 250%;
+	text-align: left;
+	margin: 20px 0;
+	padding: 0;
+}
+.specialoffers_data {
+	text-align: left;
+	font-size: 10px;
+	line-height: 15px;
+	vertical-align: top;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+.specialoffers_offerta {
+	font-size: 13px;
+	line-height: 15px;
+	text-align: left;
+	padding: 0;
+	vertical-align: top;
+	font-weight:bold;
+}
+.specialoffers_abstract {
+	text-align: left;
+	font-size: 12px;
+	line-height: 15px;
+	vertical-align: top;
+	padding-bottom: 5px;
+}
+.specialoffers_img {
+	vertical-align: top;
+	padding: 0;
+}
+.specialoffers_viewtabella {
+	width: 455px;
+	margin: 0 auto;
+	padding: 0;
+}
+.specialoffers_viewtitolo {
+	color: #fff;
+	text-align: left;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 13px;
+	padding: 5px;
+	margin: 0;
+	background: #E6CF71;
+}
+.specialoffers_linklistacompleta {
+	font-size: 10px;
+	line-height: 15px;
+	text-align: left;
+	font-weight: bold;
+	vertical-align: top;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.specialoffers_viewtabella_completa {
+	vertical-align: top;
+	width: 100%;
+	padding: 2px 2px 2px 0;
+}
+.specialoffers_viewtitolo_completa {
+	color: #fff;
+	text-align: left;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 13px;
+	padding: 5px;
+	margin: 0;
+	background: #E6CF71;
+}
+.specialoffers_navigazione_completa {
+	color: #000;
+	font-size: 84%;
+	text-align: left;
+	vertical-align: top;
+	padding-top: 15px;
+	padding-left: 9px;
+	background: transparent;
+}
+.specialoffers_viewtabella_detail {
+	vertical-align: top;
+	width: 100%;
+}
+.specialoffers_viewtitolo_detail {
+	text-align: left;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 13px;
+	padding: 5px;
+	margin: 0;
+	background: #fff;
+}
+.specialoffers_data_detail {
+	font-size: 84%;
+	vertical-align: top;
+	padding-left: 9px;
+	background: transparent;
+}
+.specialoffers_offerta_detail {
+	font-weight: bold;
+	font-size: 100%;
+	vertical-align: top;
+	padding-top: 3px;
+	padding-bottom: 15px;
+	padding-left: 9px;
+	background: transparent;
+}
+.specialoffers_testo_detail {
+	font-size: 84%;
+	vertical-align: top;
+	padding-left: 9px;
+	background: transparent;
+}
+div#bottom {
+	vertical-align: top;
+	margin: 0 auto;
+	padding: 0px 0px 20px 0px;
+	width: 750px;
+	clear: both;
+}
+div#bottom p {
+	font-size: 65%;
+	line-height: 100%;
+	text-align: left;
+	padding: 5px 0 0 20px;
+}
+div#bottom p a {
+	color: #808948;
+	font-weight: bold;
+	text-decoration: none;
+}
+div#bottom p a:hover {
+	color: #626262;
+	text-decoration: none;
+}
+
+div#contenitoreinterno {
+	margin: 0 auto;
+	padding: 0;
+	width: 830px;
+	vertical-align: top;
+	background: #B9BE8E url(../img/b_rooms.gif) no-repeat 0 0;
+}
+div#top_interno {
+	vertical-align: top;
+	margin: 0;
+	padding: 0;
+	width: 830px;
+	height: 127px;
+	float: left;
+}
+div#top_interno .floatleft {
+	float: left;
+	width: 310px;
+	height: 127px;
+	margin: 0 0 0 24px;
+	padding: 0;
+}
+div#top_interno h1 {
+	color: #828848;
+	text-align: right;
+	margin: 0;
+	padding: 100px 65px 0 0;
+	font: normal normal 24px/24px Georgia, "Trebuchet MS", Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+div#foto {
+	vertical-align: top;
+	width: 830px;
+}
+div#foto img {
+	margin: 0 8px 0 0;
+	padding: 0;
+	width: 750px;
+}
+div#menuinterno {
+	vertical-align: top;
+	margin: 10px 0 30px;
+	padding: 0;
+	width: 830px;
+	clear: both;
+}
+div#menuinterno p {
+	color: #FECF97;
+	text-align: right;
+	padding: 0 52px 0 0;
+	margin: 0;
+	font: bold 12px Georgia, "Trebuchet MS", Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+div#menuinterno p a {
+	color: #828848;
+	text-decoration: none;
+}
+div#menuinterno p a:hover {
+	color: #FECF97;
+	text-decoration: none;
+}
+div#contenitoreinterno .fotoleft {
+	margin: 0;
+	padding: 0 10px 0 0;
+	text-align: right;
+	width: 290px;
+	float: left;
+}
+div#contenitoreinterno p.testodescrittivo {
+	font-size: 84%;
+	line-height: 150%;
+	text-align: left;
+	margin: 0 0 20px;
+	padding: 0 55px;
+}
+div#tabellainterna {
+	padding: 0;
+	margin: 0 auto;
+	width: 720px;
+}
+div#col_sx_interno {
+	width: 470px;
+	padding: 0;
+	float: left;
+	text-align: left;
+}
+div#col_sx_interno .bg {
+	padding: 4px;
+	width: 461px;
+	background: #F8F1D5;
+}
+div#col_sx_interno h1 {
+	color: #fff;
+	text-align: left;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 13px;
+	padding: 5px;
+	margin: 0;
+	background: #828848;
+}
+div#col_sx_interno h1 a {
+	color: #E6CF71;
+	text-decoration: none;
+}
+div#col_sx_interno h1 a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+div#col_sx_interno p.cr {
+	text-align: left;
+	font-size: 65%;
+	line-height: 13px;
+	padding: 5px;
+	margin: 0;
+}
+div#col_dx_interno {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+div#col_dx_interno table {
+	width: 241px;
+	padding: 0;
+	margin: 0;
+}
+div#col_dx_interno div.sinistra {
+	margin: 0;
+	padding: 0;
+	width: 241px;
+}
+div#col_dx_interno div.sinistra img {
+	margin: 0 0 10px;
+}
+div#tabellaprezzi {
+	width: 235px;
+	margin: 0 auto;
+	text-align: left;
+}
+div#tabellaprezzi h2 {
+	padding: 20px 0 0;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: left;
+	width: 235px;
+}
+dl {
+	width: 100%;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	background: url(../img/dot.gif) repeat-x 0 8px;
+}
+dt, dd.prezzo {
+	background: #FFF;
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: normal;
+}
+dt {
+	float: left;
+	padding-right: 3px;
+}
+dd {
+	margin: 0;
+}
+dd.prezzo {
+	float: right;
+}
+dd.tratteggio {
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	font-size: 0;
+	color: #fff;
+	line-height: 0;
+}
+div#listacomforts {
+	width: 235px;
+	clear: both;
+}
+div#listacomforts h2 {
+	padding: 10px 0 0 7px;
+	font-size: 12px;
+	line-height: 20px;
+	text-align: left;
+	width: 235px;
+}
+div#listacomforts div.lista {
+	float: left;
+	width: 105px;
+}
+div#listacomforts div.lista ul {
+	list-style-type: square;
+	width: 105px;
+	padding: 5px 0 5px 30px;
+	margin: 0;
+	display: block;
+}
+div#listacomforts div.lista li {
+	font-size: 12px;
+	line-height: 16px;
+	text-align: left;
+}
+div#col_dx_interno br.annulla {
+	clear: both;
+	visibility: hidden;
+}
+div#indirizzo {
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+	width: 820px;
+	height: 50px;
+	background: url(../img/bg_footer_interno.jpg) no-repeat 27px -18px;
+	clear:both;
+}
+div#indirizzo p {
+	font-size: 65%;
+	line-height: 100%;
+	text-align: left;
+	padding: 0 0 10px 60px;
+}
+div#col_sx_interno p.pdf {
+	text-align: left;
+	font-size: 10px;
+	line-height: 13px;
+	padding: 5px;
+	margin: 0;
+}
+div#col_sx_interno img {
+	margin: 10px 10px 10px 0;
+	padding: 0;
+	float: left;
+}
+div#contenitoreinterno_bookonline {
+	margin: 0 auto;
+	padding: 0;
+	width: 830px;
+	vertical-align: top;
+	background: #B9BE8E url(../img/b_bookonline.gif) no-repeat 0 0;
+}
+.bookonline_viewtabella {
+	vertical-align: top;
+	width: 100%;
+	margin: 0 auto;
+}
+.request_viewtabella {
+	vertical-align: top;
+	width: 100%;
+	margin: 0 auto;
+}
+.ssl_viewtabella {
+	vertical-align: top;
+	width: 100%;
+}
+.booktesto {
+	font-size: 84%;
+	line-height: 130%;
+	padding: 10px 5px 0;
+}
+.booksottotesto {
+	font-size: 65%;
+	line-height: 150%;
+	padding: 0 5px;
+}
+.requesttesto {
+	font-size: 84%;
+	line-height: 130%;
+	padding: 10px 5px;
+}
+.ssltesto {
+	font-style: normal;
+	font-size: 65%;
+	line-height: 130%;
+	border-top: solid 1px #A9A490;
+	padding: 5px;
+	margin: 10px 0;
+}
+.pulsantebox {
+	font-size: 84%;
+	line-height: 130%;
+	padding: 0 0 0 10px;
+	vertical-align: top;
+}
+.box_testo_form {
+	padding: 0 10px 10px 0;
+}
+.tabella_secure {
+	width: 100%;
+}
+.box_ssl_secure {
+	width: 197px;
+	border: 1px solid #fff;
+	padding: 10px;
+	background: #B4C4EE;
+}
+.testo_form {
+	font-size: 84%;
+	line-height: 130%;
+	text-align: left;
+	margin: 0 10px 0 0;
+	padding: 10px 0 0;
+	vertical-align: top;
+}
+.testino_form {
+	font-size: 74%;
+	line-height: 130%;
+	text-align: left;
+	padding: 5px 0 0;
+	vertical-align: top;
+}
+.formtab {
+	border: solid 1px #B9BE8E;
+}
+.formtitle {
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 5px;
+	background: #B9BE8E;
+}
+.formfont {
+	font-size: 12px;
+	margin: 0;
+	padding: 10px 0 0;
+}
+.formfontina {
+	font-style: italic;
+	font-size: 65%;
+	margin: 0;
+	padding: 0 10px 0 0;
+}
+.consenso_font {
+	font-size: 13px;
+	margin: 10px 0 0;
+	padding: 0;
+}
+.privacy_font {
+	font-size: 13px;
+	margin: 10px 0 0;
+	padding: 0;
+}
+.formfontrequired {
+	color: red;
+	font-weight: bold;
+	font-size: 13px;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+.campo_testo {
+	font-size: 12px;
+	background: #fff;
+}
+.campo_testobox {
+	background: #fff;
+	font: 13px "Trebuchet MS", Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+.campo_submit {
+	color: #fff;
+	font-size: 14px;
+	margin: 10px 0;
+	background: #B9BE8E;
+}
+.campo_select {
+	font-size: 11px;
+	background: #fff;
+}
+.confermatesto {
+	font-size: 84%;
+	text-align: center;
+}
+.nozio_hotels {
+	margin: 50px;
+
+}
+
+/* box zero per cento */
+div#box0per100ridotto table {
+	border-collapse: collapse;
+	width: auto;
+	margin: 10px 0;
+	padding: 0;
+}
+div#box0per100ridotto td.immagine {
+	vertical-align: middle;
+	text-align: center;
+	background: #000;
+	width:48px;
+	height:47px;
+	margin:0;
+}
+div#box0per100ridotto td.immagine img {
+	border: 0;
+}
+div#box0per100ridotto td.descrizione {
+	vertical-align: middle;
+	padding: 3px 5px;
+	background: #B9BE8E;
+}
+div#box0per100ridotto td.descrizione p {
+	text-align: left;
+	color: #fff;
+	padding: 0;
+	margin: 0;
+	font: 65%/120% "Trebuchet MS";
+}
+div#box0per100ridotto td p a:link {
+	color: #fff;
+	text-decoration: none 
+}
+div#box0per100ridotto td p a:visited {
+	color: #fff;
+	text-decoration: none 
+}
+div#box0per100ridotto td p a:hover{
+	color: #000;
+	text-decoration: none
+}
+div#box0per100ridotto td p a:active {
+	color: #fff;
+	text-decoration: none 
+}
+#frase h1, #frasefooter h1 {
+	font-weight: normal;
+	text-align: center;
+	font: 12px "Trebuchet MS", Geneva, Arial, Helvetica, sans-serif;
+	padding: 0;
+	margin: 0;
+}
+#frase {
+	color: #737373;
+	text-align: center;
+	padding: 2px;
+	background: #d3d3d3;
+	font: 12px "Trebuchet MS", Geneva, Arial, Helvetica, sans-serif;
+}
+#frasefooter {
+	color: #737373;
+	padding: 2px;
+	font: 10px "Trebuchet MS", Geneva, Arial, Helvetica, sans-serif;
+}
+a:link.travel {
+	font-weight: normal;
+	color: #737373;
+	text-decoration: none;
+}
+a:visited.travel {
+	font-weight: normal;
+	color: #737373;
+	text-decoration: none;
+}
+a:hover.travel {
+	font-weight: normal;
+	color: #737373;
+	text-decoration: none;
+}
+a:active.travel {
+	font-weight: normal;
+	color: #737373;
+	text-decoration: none;
+}
+a:link.prima,a:link.primafooter {
+	color: #737373;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a:visited.prima,a:visited.primafooter {
+	color: #737373;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a:hover.prima,a:hover.primafooter {
+	color: #737373;
+	font-weight: bold;
+	text-decoration: underline;
+}
+a:active.prima,a:active.primafooter {
+	color: #737373;
+	font-weight: bold;
+	text-decoration: underline;
+}
+#privacy_box {
+
+}
+#privacy_box p {
+	font-size:10px;
+	line-height:14px;
+}
+#privacy_box p.informativatesto {
+	font-size:10px;
+	height:70px;
+	overflow:auto;
+	margin:5px 0px 30px 0px;
+}
+
+a.cc-btn.cc-dismiss {
+	display: none !important;
+}

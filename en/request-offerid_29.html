@@ -1,0 +1,728 @@
+<!-- Converted from PHP to HTML -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+<title>Hotel Mestre Hotel Altieri Venice Mestre - Official Site - 3 three star hotel Venice Mestre Italy</title>
+<meta content=" In Mestre, 3 miles from the airport and 10 miles from the center of Venice, Hotel Altieri is the perfect solution for both tourist and business trips." name="description"/>
+<meta content="Hotel Mestre, Hotel Altieri Venice Mestre, Mestre hotels, hotels Venice, Venice hotels, hotels Mestre, Mestre hotel, hotels in Venice Mestre, 3 three star hotel Venice Mestre, hotel in Mestre, hotels in Mestre Italy, Venice Mestre hotels, 3 three star hotel Mestre, hotels in Venice Mestre, hotels in Venice Mestre, Venice airport, airport in Venice" name="keywords"/>
+<meta content="global" name="distribution"/>
+<meta content="7 days" name="revisit-after">
+<meta content="all" name="robots"/>
+<style media="all" type="text/css">
+@import url("../css/styles.css");
+</style>
+<script language="JavaScript">
+<!-- Begin
+
+function isObject(a) {
+    return (a && typeof a == 'object');
+}
+
+var haveerrors = 0;
+function showImage(imagename, imageurl, errors) {
+document[imagename].src = imageurl;
+if (!haveerrors && errors) haveerrors = errors;
+}
+
+function validateForm(f) {
+f.js.value = 1;
+haveerrors = 0;
+
+
+// Controllo date arrivo - partenza
+var monthLength = new Array(31,28,31,30,31,30,31,31,30,31,30,31);
+var monthLength_back = new Array(31,28,31,30,31,30,31,31,30,31,30,31);
+
+var ArriveDateOk = true;
+var BackDateOk = true;
+var dateExists = true;
+var dateExists_back = true;
+
+var day = f.giorno_arrivo.value;
+var month = f.mese_arrivo.value;
+var year = f.anno_arrivo.value;
+
+var day_back = f.giorno_partenza.value;
+var month_back = f.mese_partenza.value;
+var year_back = f.anno_partenza.value;
+
+if (year/4 == parseInt(year/4))
+	monthLength[1] = 29;
+
+if (month <1)
+	dateExists = false;
+
+if (day <1)
+	dateExists = false;
+
+if (day > monthLength[month-1])
+	dateExists = false;
+
+monthLength[1] = 28;
+
+if (!dateExists) ArriveDateOk = false;
+
+if (year_back/4 == parseInt(year_back/4))
+	monthLength_back[1] = 29;
+
+if (month_back<1)
+	dateExists_back = false;
+
+if (day_back<1)
+	dateExists_back = false;
+
+if (day_back > monthLength_back[month_back-1])
+	dateExists_back = false;
+
+monthLength_back[1] = 28;
+
+if (!dateExists_back) BackDateOk = false;
+
+var now = new Date();
+now = now.getTime(); //NN3
+
+var dateToCheck = new Date();
+dateToCheck.setYear(year);
+dateToCheck.setMonth(month-1);
+dateToCheck.setDate(day);
+var checkDate = dateToCheck.getTime();
+
+var dateToCheck_back = new Date();
+dateToCheck_back.setYear(year_back);
+dateToCheck_back.setMonth(month_back-1);
+dateToCheck_back.setDate(day_back);
+var checkDate_back = dateToCheck_back.getTime();
+
+var ArriveDate = (now <= checkDate);
+var BackDate = (checkDate_back > checkDate);
+
+if (!ArriveDate) ArriveDateOk = false;
+if (!BackDate) BackDateOk = false;
+
+if(year=="" || month=="" || day == "") ArriveDateOk = false;
+if(year_back=="" || month_back=="" || day_back=="") BackDateOk = false;
+
+// var pastDate = (now > checkDate);
+// END - Controllo date arrivo - partenza
+
+function isChecked(strField){
+if (!strField.length) return strField.checked; // not a group
+for(var i = 0; i < strField.length; i++){
+if(strField[i].checked) return true; // yes one was ticked
+}
+return false;
+}
+
+Filtro = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-]{2,})+\.)+([a-zA-Z0-9]{2,})+$/;
+FiltroAnagrafica = /[a-zA-Z0-9\'\.]+/;
+
+(FiltroAnagrafica.test(f.cognome.value)) == false
+? showImage("cognome_error", "../img/error.gif", true)   // no semi-colon after this line!
+: showImage("cognome_error", "../img/empty.gif", false); // true = errors, false = no errors
+
+(FiltroAnagrafica.test(f.nome.value)) == false
+? showImage("nome_error", "../img/error.gif", true)   // no semi-colon after this line!
+: showImage("nome_error", "../img/empty.gif", false); // true = errors, false = no errors
+
+(FiltroAnagrafica.test(f.nominativo.value)) == false
+? showImage("nominativo_error", "../img/error.gif", true)   // no semi-colon after this line!
+: showImage("nominativo_error", "../img/empty.gif", false); // true = errors, false = no errors
+
+(Filtro.test(f.email.value)) == false
+? showImage("email_error", "../img/error.gif", true)   // no semi-colon after this line!
+: showImage("email_error", "../img/empty.gif", false); // true = errors, false = no errors
+
+if(isObject(f.confermaemail) && (Filtro.test(f.email.value)==true) ){
+	(f.confermaemail.value != f.email.value)
+	? showImage("confermaemail_error", "../img/error.gif",true)   // no semi-colon after this line!
+	: showImage("confermaemail_error", "../img/empty.gif",false); // true = errors, false = no errors
+}
+
+(!ArriveDateOk)
+? showImage("arrivo_error", "../img/error.gif", true)
+: showImage("arrivo_error", "../img/empty.gif", false);
+
+(!BackDateOk)
+? showImage("partenza_error", "../img/error.gif", true)
+: showImage("partenza_error", "../img/empty.gif", false);
+
+(f.quantita_alloggio_richiesta_1.value.length < 1)
+? showImage("quantita_alloggio_richiesta_1_error", "../img/error.gif", true)   // no semi-colon after this line!
+: showImage("quantita_alloggio_richiesta_1_error", "../img/empty.gif", false); // true = errors, false = no errors
+
+(f.tipo_alloggio_richiesta_1.value.length < 1)
+? showImage("tipo_alloggio_richiesta_1_error", "../img/error.gif", true)   // no semi-colon after this line!
+: showImage("tipo_alloggio_richiesta_1_error", "../img/empty.gif", false); // true = errors, false = no errors
+
+(f.totale_adulti.value.length < 1)
+? showImage("totale_adulti_error", "../img/error.gif", true)   // no semi-colon after this line!
+: showImage("totale_adulti_error", "../img/empty.gif", false); // true = errors, false = no errors
+
+(!isChecked(f.consenso))
+? showImage("consenso_error", "../img/error.gif", true)   // no semi-colon after this line!
+: showImage("consenso_error", "../img/empty.gif", false); // true = errors, false = no errors
+
+if(haveerrors){
+	str="Careful!\nYou have not filled in the compulsory fields highlighted. ";
+	alert(str);
+}
+return (!haveerrors);
+}
+//  End
+ -->
+</script>
+<script language="JavaScript">
+
+function toForm() {
+document.NormalForm.cognome.focus();
+}
+</script>
+<script language="JavaScript">
+	<!--
+	function MM_openBrWindow(theURL,winName,features) { //v2.0
+  	bestrates=window.open(theURL,winName,features);
+  	bestrates.focus();
+	}
+	//-->
+</script>
+<script type="text/javascript"> 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript"> 
+try {
+var pageTracker = _gat._getTracker("UA-307876-8");
+pageTracker._setDomainName("none");
+pageTracker._setAllowLinker(true);
+pageTracker._trackPageview();
+} catch(err) {}</script>
+<script src="../includes/popupper.js" type="text/javascript"></script></meta><script type="text/javascript">
+                document.addEventListener("DOMContentLoaded", function() {
+                    fetch('common_menu.html')
+                        .then(response => response.text())
+                        .then(data => {
+                            document.querySelector('.menu').innerHTML = data;
+                        });
+                });
+            </script></head>
+<body>
+
+<div class="menu">
+    <p><a href="description.html">DESCRIPTION</a> | 
+    <a href="location.html">LOCATION</a> | 
+    <a href="rooms.html">ROOMS AND RATES</a> | 
+    <a href="reservations.html">RESERVATIONS</a></p>
+</div>
+
+<div id="contenitoreinterno">
+<div id="top_interno"><img alt="" class="floatleft" height="127" src="../img/reservations_dettaglio.jpg" width="310"/>
+<h1>Reservations</h1>
+</div>
+<div id="foto"><img alt="" height="386" src="../img/reservations_foto.jpg" width="750"/></div>
+<div id="menuinterno">
+<div class="menu">
+<p><a href="index.html">HOME</a> | 
+    <a href="description.html">DESCRIPTION</a> | 
+    <a href="location.html">LOCATION</a> | 
+    <a href="rooms.html">ROOMS AND RATES</a> | 
+    <a href="specialoffers.html">SPECIAL OFFERS</a> | 
+    <a href="reservations.html">RESERVATIONS</a> | 
+    <a href="contacts.html">CONTACTS</a></p>
+</div>
+</div>
+<form action="../formaltieri.html" method="post" name="NormalForm" onsubmit="return validateForm(this)">
+<input name="env_report" type="hidden" value="REMOTE_HOST,REMOTE_ADDR,HTTP_USER_AGENT,AUTH_TYPE,REMOTE_USER"/>
+<input name="recipients" type="hidden" value="info@altierivenice.it"/>
+<input name="subject" type="hidden" value="Richiesta dal sito altierivenice.it - EN"/>
+<input name="derive_fields" type="hidden" value="email=email,realname=cognome"/>
+<input name="good_url" type="hidden" value="http://www.altierivenice.it/en/grazie.html"/>
+<input name="js" type="hidden" value="0"/>
+<input name="lang" type="hidden" value="Inglese"/><br/>
+<br/>
+<table align="center" width="85%">
+<tr>
+<td colspan="3">
+<p><b><a href="reservations.html">Reservations</a> &gt; </b>Request for availability and prices<br/>
+</p>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<div class="box_testo_form">
+<p class="testo_form">Compile the <b>required fields (</b><span class="formfontrequired"><b>*</b></span><b>)</b> of the form below and you will receive <b>a reply via email</b> from our staff as soon as possible. If you are happy with the reply, you can <b>confirm the booking</b>, within the terms established in the email, by sending us your credit card details using a <b>secure form</b>.</p>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<table width="100%">
+<tr>
+<td valign="top">
+<p class="specialoffers_viewtitolo_detail"></p>
+</td>
+</tr>
+<tr>
+<td align="left" valign="top">
+<strong>Special Offers </strong><br/>
+								Special offer to our Guests: SAVE MONEY! -5%<strong></strong><br/><input name="offerta" type="hidden" value="è stata selezionata l'offerta: Special offer to VENICE: FREE BUS TICKETS a partire da 0 euro"/><br/>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+<tr>
+<td class="formtab" valign="top">
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="formtitle" colspan="2">PERSONAL DATA</td>
+</tr>
+<tr>
+<td nowrap="" width="15"></td>
+<td nowrap="">
+<p class="formfont">Surname<span class="formfontrequired"> *</span></p>
+</td>
+</tr>
+<tr>
+<td class="allert" nowrap="" width="15"><img border="0" name="cognome_error" src="../img/empty.gif"/></td>
+<td nowrap="" valign="top">
+<div align="left">
+<input class="campo_testo" maxlength="40" name="cognome" size="20" type="text" value=""/>
+</div>
+</td>
+</tr>
+<tr>
+<td nowrap="" width="15"></td>
+<td nowrap="">
+<p class="formfont">Name<span class="formfontrequired"> *</span></p>
+</td>
+</tr>
+<tr>
+<td class="allert" nowrap="" width="15"><img border="0" name="nome_error" src="../img/empty.gif"/></td>
+<td nowrap="" valign="top">
+<div align="left">
+<input class="campo_testo" maxlength="40" name="nome" size="20" type="text" value=""/>
+</div>
+</td>
+</tr>
+<tr>
+<td nowrap="" width="15"></td>
+<td nowrap="">
+<p class="formfont">E-mail<span class="formfontrequired"> *</span></p>
+</td>
+</tr>
+<tr>
+<td class="allert" nowrap="" width="15"><img border="0" name="email_error" src="../img/empty.gif"/></td>
+<td nowrap="" valign="top">
+<div align="left">
+<input class="campo_testo" maxlength="80" name="email" size="20" type="text" value=""/>
+</div>
+</td>
+</tr>
+<tr>
+<td nowrap="" width="15"></td>
+<td nowrap="" valign="top">
+<p class="formfont">Fax</p>
+<div align="left">
+<input class="campo_testo" maxlength="80" name="fax" size="20" type="text" value=""/>
+</div>
+</td>
+</tr>
+<tr>
+<td nowrap="" width="15"></td>
+<td>
+<p class="formfont">Special requests:</p>
+<div align="left">
+<textarea class="campo_testobox" cols="20" name="specifiche" rows="4"></textarea>
+</div>
+</td>
+</tr>
+</table>
+</td>
+<td valign="top" width="32"><img alt="" border="0" src="../img/spessore.gif"/></td>
+<td class="formtab" valign="top">
+<div align="left">
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="formtitle" colspan="5">BOOKING DATA</td>
+</tr>
+<tr>
+<td width="15"></td>
+<td colspan="4" valign="top">
+<p class="formfont">Arrival date<span class="formfontrequired"> *</span></p>
+</td>
+</tr>
+<tr>
+<td class="allert" width="15"><img border="0" name="arrivo_error" src="../img/empty.gif"/></td>
+<td colspan="4" valign="top">
+<select class="campo_select" name="giorno_arrivo" size="1">
+<option selected="" value="">Day</option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select class="campo_select" name="mese_arrivo" size="1">
+<option selected="" value="">Month</option>
+<option value="01">January</option>
+<option value="02">February</option>
+<option value="03">March</option>
+<option value="04">April</option>
+<option value="05">May</option>
+<option value="06">June</option>
+<option value="07">July</option>
+<option value="08">August</option>
+<option value="09">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+</select>
+<select class="campo_select" name="anno_arrivo" size="1">
+<option selected="" value="">Year
+										<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+</option></select>
+</td>
+</tr>
+<tr>
+<td width="15"></td>
+<td colspan="4">
+<p class="formfont">Departure date<span class="formfontrequired"> *</span></p>
+</td>
+</tr>
+<tr>
+<td class="allert" width="15"><img border="0" name="partenza_error" src="../img/empty.gif"/></td>
+<td colspan="4" valign="top">
+<select class="campo_select" name="giorno_partenza" size="1">
+<option selected="" value="">Day</option>
+<option value="01">01</option>
+<option value="02">02</option>
+<option value="03">03</option>
+<option value="04">04</option>
+<option value="05">05</option>
+<option value="06">06</option>
+<option value="07">07</option>
+<option value="08">08</option>
+<option value="09">09</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select class="campo_select" name="mese_partenza" size="1">
+<option selected="" value="">Month</option>
+<option value="01">January</option>
+<option value="02">February</option>
+<option value="03">March</option>
+<option value="04">April</option>
+<option value="05">May</option>
+<option value="06">June</option>
+<option value="07">July</option>
+<option value="08">August</option>
+<option value="09">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+</select>
+<select class="campo_select" name="anno_partenza" size="1">
+<option selected="" value="">Year
+										<option value="2012">2012</option>
+<option value="2013">2013</option>
+<option value="2014">2014</option>
+</option></select>
+</td>
+</tr>
+<tr>
+<td width="15"></td>
+<td>
+<p class="formfont">Adults<span class="formfontrequired"> *</span></p>
+</td>
+<td width="15"></td>
+<td colspan="2">
+<p class="formfont">Children (0-12)</p>
+</td>
+</tr>
+<tr>
+<td class="allert" width="15"><img border="0" name="totale_adulti_error" src="../img/empty.gif"/></td>
+<td valign="top">
+<select class="campo_select" name="totale_adulti" size="1" value="">
+<option selected="" value=""></option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+</select>
+</td>
+<td width="15"></td>
+<td colspan="2" valign="top">
+<select class="campo_select" name="totale_bambini" size="1" value="">
+<option selected="" value=""></option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+</select>
+</td>
+</tr>
+<tr>
+<td width="15"></td>
+<td>
+<p class="formfont">Accommodation type</p>
+</td>
+<td width="15"></td>
+<td width="100">
+<p class="formfont">Quantity</p>
+</td>
+<td>
+<p class="formfont">Extra bed</p>
+</td>
+</tr>
+<tr>
+<td class="allert" width="15"><img border="0" name="tipo_alloggio_richiesta_1_error" src="../img/empty.gif"/></td>
+<td valign="top">
+<select class="campo_select" name="tipo_alloggio_richiesta_1" size="1" value="">
+<option selected="" value=""></option>
+<option value="Singola">Single Room</option>
+<option value="Doppia">Double Room</option>
+<option value="Doppia (Uso Singolo)">Double Room (One Person)</option>
+<option value="Tripla">Triple Room</option>
+<option value="Tripla Child">Triple Room, for Children</option>
+</select>
+<span class="formfontrequired">*</span></td>
+<td class="allert" width="15"><img border="0" name="quantita_alloggio_richiesta_1_error" src="../img/empty.gif"/></td>
+<td valign="top" width="100">
+<select class="campo_select" name="quantita_alloggio_richiesta_1" size="1" value="">
+<option selected="" value=""></option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+<span class="formfontrequired">*</span></td>
+<td valign="top">
+<select class="campo_select" name="quantita_letto_ag_1" size="1" value="">
+<option selected="" value=""></option>
+<option value="1">1</option>
+<option value="2">2</option>
+</select>
+</td>
+</tr>
+<tr>
+<td width="15"></td>
+<td valign="top">
+<select class="campo_select" name="tipo_alloggio_richiesta_2" size="1" value="">
+<option selected="" value=""></option>
+<option value="Singola">Single Room</option>
+<option value="Doppia">Double Room</option>
+<option value="Doppia (Uso Singolo)">Double Room (One Person)</option>
+<option value="Tripla">Triple Room</option>
+<option value="Tripla Child">Triple Room, for Children</option>
+</select>
+</td>
+<td width="15"></td>
+<td valign="top" width="100">
+<select class="campo_select" name="quantita_alloggio_richiesta_2" size="1" value="">
+<option selected="" value=""></option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+</td>
+<td valign="top">
+<select class="campo_select" name="quantita_letto_ag_2" size="1" value="">
+<option selected="" value=""></option>
+<option value="1">1</option>
+<option value="2">2</option>
+</select>
+</td>
+</tr>
+<tr>
+<td width="15"></td>
+<td valign="top">
+<select class="campo_select" name="tipo_alloggio_richiesta_3" size="1" value="">
+<option selected="" value=""></option>
+<option value="Singola">Single Room</option>
+<option value="Doppia">Double Room</option>
+<option value="Doppia (Uso Singolo)">Double Room (One Person)</option>
+<option value="Tripla">Triple Room</option>
+<option value="Tripla Child">Triple Room, for Children</option>
+</select>
+</td>
+<td width="15"></td>
+<td valign="top" width="100">
+<select class="campo_select" name="quantita_alloggio_richiesta_3" size="1" value="">
+<option selected="" value=""></option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+</select>
+</td>
+<td valign="top">
+<select class="campo_select" name="quantita_letto_ag_3" size="1" value="">
+<option selected="" value=""></option>
+<option value="1">1</option>
+<option value="2">2</option>
+</select>
+</td>
+</tr>
+<tr>
+<td width="15"></td>
+<td colspan="4">
+<p class="formfont">In the name of<span class="formfontrequired"> *</span></p>
+</td>
+</tr>
+<tr>
+<td class="allert" width="15"><img border="0" name="nominativo_error" src="../img/empty.gif"/></td>
+<td colspan="4">
+<div align="left">
+<input class="campo_testo" maxlength="35" name="nominativo" size="20" type="text" value=""/>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td></td>
+<td width="32"></td>
+<td>
+<div align="center">
+<input class="campo_submit" name="submit" type="submit" value="Request availability"/>
+</div>
+</td>
+</tr>
+<tr>
+<td colspan="3">
+<div align="center">
+<table border="0" cellpadding="2" cellspacing="0" width="100%">
+<tr>
+<td class="allert" width="15"><img border="0" name="consenso_error" src="../img/empty.gif"/></td>
+<td>
+<p class="consenso_font">
+<input checked="" name="consenso" type="checkbox" value="Si"/>
+										I allow you to process my personal data<span class="formfontrequired"> *</span></p>
+</td>
+</tr>
+<tr>
+<td width="15"></td>
+<td>
+<div id="privacy_box">
+<p><strong> Information regarding processing of personal data</strong></p>
+<p class="informativatesto"> In accordance with article 13 of Legislative Decree 196/2003 (law related to the protection of personal data) the data controller hereby informs you that:<br/>
+											a) processing of your personal data shall be carried out for:<br/>
+											1. contractual obligations: to supply goods and services to guests;<br/>
+											2. legal obligations: invoicing, obligatory books of accounts and entries, communications to requesting authorities;<br/>
+											3. communications to banks and similar institutions, for collection of credits and other activities related to contractual obligations;<br/>
+											4. offer of services during your stay (secretarial service, delivery of correspondence, reservation of external services) or subsequent to your stay (communication of special offers, events or similar)<br/>
+<br/>
+											the processing shall be effected with manual and/or automatic systems used to memorize, manage and transmit the data, with logic strictly related to the purposes, based on the data in our possession and with your agreement to immediately communicate any corrections, additions and updates;<br/>
+<br/>
+											b) Your refusal to provide authorization for the points 1,2 and 3 of paragraph a) shall result in:<br/>
+											1. the impossibility to start or continue the transaction, or to effect some operations, if the data are required for effecting the transaction or operation;<br/>
+											2. the impossibility to effect some operations which require the communication of the data to subjects which are functionally related to effecting such operations;<br/>
+											3. the failure to communicate the data to subjects which carry out other activities, not functionally related to effecting the transaction.<br/>
+<br/>
+											c) In addition to the person assigned within the data controller company, your data may be communicated to: <br/>
+											1. hotel facilities where you will be a guest;<br/>
+											2. tax consultant (for administrative purposes);<br/>
+											3. public and private agencies, also following inspections or audits;<br/>
+											4. subjects which can access your data based on the laws;<br>
+											5. outside companies which supply goods and services.<br>
+<br>
+											d) e) you can exercise your rights with regards to the data controller at any time, in accordance with article 7 of Legislative Decree 196/2003, which for your convenience we have reproduced in its entirety below:<br>
+<br>
+											Article 7. Right to access to personal data and other rights<br>
+											1. The interested party has the right to obtain confirmation of the existence of personal data which regard him or her even if not yet registered, and their communication in an intelligible form.<br/>
+											2. The interested party has the right to obtain the indication of:<br/>
+											a. the origin of personal data;<br/>
+											b. purpose and procedure of processing;<br/>
+											c. the logic applied in the event of processing with the use of electronic means;<br/>
+											d. The identification data of the controller, managers and assigned representative in accordance with article 5, paragraph 2;<br/>
+											e. the subjects or categories of subjects to whom the personal data may be communicated or who can learn about them as appointed representative in the territory of the State, managers or assigned personnel.<br/>
+											3. The interested party has the right to obtain:<br/>
+											a. updating, amending or addition to the data if this is in his or her interest;<br/>
+											b. cancellation, transformation to anonymous form or block of the processed data in violation of the law, including those for which it is not necessary to store the data in relation to the purposes for which the data were collected or later processed;<br/>
+											c. certification that the operations in letters a) and b) were communicated, also in terms of their contents, to those to whom the data have been communicated or distributed, except in the case where compliance with such results to be impossible or involves the use of means clearly disproportionate in relation to the protected right.<br/>
+											4. The interested party has the right to oppose, all or in part:<br/>
+											a. processing of personal data which regard him or her for legitimate reasons, even if pertinent to the purposes of their collection;<br/>
+											b. processing of personal data which regard him or her for the purposes of sending direct mail marketing material or for carrying out market surveys or commercial communication.</br></br></br></br></br></br></p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</form>
+<div id="indirizzo">
+<p><strong>Hotel Altieri</strong> Via Altinia 51, 30030 Favaro Veneto, Venice <a href="phone.html">PHONE &amp; FAX click here</a> - <a href="mailbox.html">EMAIL click here </a></p>
+</div>
+</div>
+<div id="bottom">
+<!-- PHP code removed:  include("inc/menu-down.html");  -->
+<!-- PHP code removed:  include("inc/lingue-down.html");  -->
+<p><strong>Hotel Altieri</strong> © 2000-2016</p></div>
+<!-- PHP code removed:  include("../extra.html");  -->
+</body>
+</html>
+<!-- Localized -->
